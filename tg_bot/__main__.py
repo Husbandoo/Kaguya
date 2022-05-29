@@ -152,17 +152,13 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/YorktownEagleUnion',
+                                url='https://t.me/ShinomiyaSupport',
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/KigyoUpdates",
+                                url="https://t.me/ShinomiyaUpdates",
                             ),
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "src_btn"),
-                                url="https://github.com/AnimeKaizoku/EnterpriseALRobot/",
-                            ),
-                        ],
+                        ]
                         [
                             InlineKeyboardButton(
                                 text="Try inline",
@@ -172,6 +168,12 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                                 text="Help",
                                 callback_data="help_back",
                             ),
+                            InlineKeyboardButton(
+                                text=gs(chat.id, "hellsing_btn"),
+                                url="https://t.me/HellsingNetwork",
+                            ),
+                        ],
+                        [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "add_bot_to_group_btn"),
                                 url="t.me/{}?startgroup=true".format(
@@ -206,7 +208,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                 text = "Here is the help for the *{}* module:\n".format(HELPABLE[mod].__mod_name__) + help_text
                 help_buttons.append(
                     [InlineKeyboardButton(text="Back", callback_data="help_back"),
-                     InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion')]
+                     InlineKeyboardButton(text='Support', url='https://t.me/Shinomiyasupport')]
                 )
                 send_help(
                     chat.id,
