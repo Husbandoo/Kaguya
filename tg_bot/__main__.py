@@ -158,7 +158,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                                 text=gs(chat.id, "updates_channel_link_btn"),
                                 url="https://t.me/ShinomiyaUpdates",
                             ),
-                        ]
+                        ],
                         [
                             InlineKeyboardButton(
                                 text="Try inline",
@@ -254,7 +254,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                                 text=gs(chat.id, "updates_channel_link_btn"),
                                 url="https://t.me/ShinomiyaUpdates",
                             ),
-                        ]
+                        ],
                         [
                             InlineKeyboardButton(
                                 text="Try inline",
